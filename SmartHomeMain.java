@@ -140,7 +140,7 @@ class SmartHomeController {
 }
 
 // Main Class
-public class SmartHomeSystem {
+public class SmartHomeMain {
     public static void main(String[] args) {
         // Create 1 instances of lightbulb and 2 instance of Thermostat
         LightBulb bulbasaur = new LightBulb("Living Room Light","Living Room");
