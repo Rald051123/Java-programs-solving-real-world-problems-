@@ -143,12 +143,12 @@ class SmartHomeController {
 public class SmartHomeMain {
     public static void main(String[] args) {
         // Create 1 instances of lightbulb and 2 instance of Thermostat
-        LightBulb bulbasaur = new LightBulb("Living Room Light","Living Room");
+        LightBulb bulb = new LightBulb("Living Room Light","Living Room");
         Thermostat thermom1 = new Thermostat("Bedroom Thermostat", "ON", "Bedroom", 24.5, "cooling");
         Thermostat thermom2 = new Thermostat("Kitchen Thermostat", "OFF", "Kitchen", 22.0, "heating");
 
         //The Array of devices
-        Device[] devices = {bulbasaur, thermom1, thermom2};
+        Device[] devices = {bulb, thermom1, thermom2};
 
         // Display all the device info
         System.out.println("=== Device Information ===");
@@ -166,7 +166,7 @@ public class SmartHomeMain {
         controller.turnAllOn();
 
         // To adjust the brightness and temperature of thermostat
-        bulbasaur.adjustBrightness(90);
+        bulb.adjustBrightness(90);
         thermom1.setTemperature(25.5);
         thermom2.setTemperature(23.5, "cooling");
 
