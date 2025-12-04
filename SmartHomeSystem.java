@@ -182,7 +182,7 @@ class Microwave extends Device {
 }
 
 // Main Program
-public class SmartHomeMain2 {
+public class SmartHomeSystem {
     public static void main(String[] args) {
 
         // Required Objects
