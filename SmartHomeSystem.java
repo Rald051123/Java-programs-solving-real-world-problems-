@@ -1,5 +1,5 @@
 abstract class Device {
-    private boolean isOn;            // Encapsulated
+    private boolean isOn;// Encapsulated
     private String deviceName;
 
     public Device(String deviceName) {
@@ -29,7 +29,7 @@ abstract class Device {
         return deviceName;
     }
 
-    // Abstract = forces subclasses to implement unique behavior
+    // Abstract = forces the subclasses to implement unique behavior
     public abstract void showStatus();
 
     // Static method to turn ON or OFF a list of devices
